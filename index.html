@@ -1,4 +1,8 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lint</title>
 <style>
   /* Layout: single-column terminal document — a fixed top command-bar, stacked
@@ -86,6 +90,10 @@
   @media(max-width:620px){.grid{grid-template-columns:1fr}}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:8px;
     padding:20px;min-width:0;display:flex;flex-direction:column;gap:10px}
+  .card.wide{grid-column:1 / -1;border-color:var(--accent-dim);
+    background:linear-gradient(180deg,rgba(74,222,128,.05),transparent 70%),var(--panel)}
+  .card.wide h3{font-size:20px}
+  .card.wide p{font-size:15.5px;max-width:72ch}
   .card .k{font-family:var(--mono);font-size:12px;letter-spacing:.06em;
     text-transform:uppercase;color:var(--accent-dim)}
   .card h3{font-family:var(--mono);font-size:17px;font-weight:600}
@@ -209,6 +217,18 @@
         <span class="stack">UART · SPI · binwalk · Ghidra · MIPS</span>
       </article>
 
+      <article class="card wide">
+        <span class="pill research">research · simulation running</span>
+        <span class="k">neuro-AI · reservoir computing · robotics</span>
+        <h3>A fly brain driving a real body</h3>
+        <p>Our own research. We use the full fruit-fly connectome (MaleCNS v1.0,
+          about 166,700 neurons, nothing trained) as a fixed reservoir for reservoir
+          computing. In simulation it already reacts to what it sees and hears and
+          moves a physics body, for example running from looming motion. The next step is
+          hardware: feed it real sensor input and drive a physical body with servo motors.</p>
+        <span class="stack">Connectome · reservoir computing · MuJoCo · FlyGym · servos</span>
+      </article>
+
       <article class="card">
         <span class="pill research">research</span>
         <span class="k">AI · RAG</span>
@@ -315,5 +335,3 @@
     });
   })();
 </script>
-
-</body></html>
