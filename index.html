@@ -172,7 +172,7 @@
       <span class="tag"><span class="d">▸</span>Gwalior, India</span>
       <span class="tag"><span class="d">▸</span>Founded 2026</span>
       <span class="tag"><span class="d">▸</span>Student-run</span>
-      <span class="tag"><span class="d">▸</span>R&amp;D · services · training</span>
+      <span class="tag"><span class="d">▸</span>R&amp;D · training</span>
     </div>
     <div class="ctas">
       <a class="btn primary" href="#join">▸ Join the studio</a>
@@ -189,11 +189,13 @@
     <div class="grid">
 
       <article class="card">
-        <span class="pill live">running</span>
+        <span class="pill wip">working prototype</span>
         <span class="k">web · platform</span>
         <h3>Lint Contest Platform</h3>
         <p>A coding practice and contest platform — problems, a sandboxed code runner,
-          contests and a leaderboard, with student, faculty and admin roles.</p>
+          contests and a leaderboard, with student, faculty and admin roles. It works, but
+          it still breaks under load because of a database connection bug we're fixing, so
+          it isn't public yet.</p>
         <span class="stack">Next.js · PostgreSQL · Redis · Docker</span>
       </article>
 
@@ -213,7 +215,7 @@
         <h3>Router reverse engineering</h3>
         <p>Reverse-engineering a proprietary router (Beetel 777VR1) with no datasheet —
           UART console, SPI flash dumps, Ghidra. We've mapped its firmware's LED control
-          surface and are closing in on the raw GPIO registers.</p>
+          surface and are now tracing it down to the raw GPIO registers.</p>
         <span class="stack">UART · SPI · binwalk · Ghidra · MIPS</span>
       </article>
 
@@ -221,11 +223,12 @@
         <span class="pill research">research · simulation running</span>
         <span class="k">neuro-AI · reservoir computing · robotics</span>
         <h3>A fly brain driving a real body</h3>
-        <p>Our own research. We use the full fruit-fly connectome (MaleCNS v1.0,
-          about 166,700 neurons, nothing trained) as a fixed reservoir for reservoir
-          computing. In simulation it already reacts to what it sees and hears and
-          moves a physics body, for example running from looming motion. The next step is
-          hardware: feed it real sensor input and drive a physical body with servo motors.</p>
+        <p>Our own research. We run the full fruit-fly connectome (MaleCNS v1.0,
+          about 166,700 neurons, nothing trained) in simulation, wired to a physics body.
+          It already reacts to what it sees and hears and moves that body, for example
+          running from looming motion. Next we want to use it as a reservoir for reservoir
+          computing, then move it onto hardware: real sensor input and a physical body
+          driven by servo motors.</p>
         <span class="stack">Connectome · reservoir computing · MuJoCo · FlyGym · servos</span>
       </article>
 
